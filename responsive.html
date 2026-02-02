@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Login</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 40;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      color: green;
+    }
+label{
+  color: purple;
+}
+    body {
+      background-color: goldenrod;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .form-group input:focus {
+      border-color: #4facfe;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      background: #4facfe;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00c6ff;
+    }
+
+    .extra-links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .extra-links a {
+      color: #4facfe;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 500px) {
+      .login-container {
+        padding: 1.5rem;
+      }
+
+      .form-group input, .btn {
+        font-size: 0.9rem;
+        padding: 0.65rem;
+      }
+    }
+    #title{
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-align: center;
+      color: blue;
+      font-size: 15px;
+}
+h2,label{
+  color: green;
+}
+  </style>
+}
+</head>
+<body>
+  <div class="login-container">
+    <h2>BTSS SYSTEM</h2>
+    <p><center>Login to your account</center></p>
+    <p id="title">Welcome here</p>
+    <h1 class="form">you are allowed</h1>
+     <h2 class="form">you are allowed</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="extra-links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Sign Up</a>
+         <footer>&copy;2026 BTS System</footer>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+ 
